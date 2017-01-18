@@ -82,7 +82,9 @@ public class Main {
         for(State t: visited){
             //check if State t is the same state as the neighbour state
             if((t.getNodePawn1().getNumber()==neighbour.getNodePawn1().getNumber()&&t.getNodePawn2().
-                    getNumber()==neighbour.getNodePawn2().getNumber())){
+                    getNumber()==neighbour.getNodePawn2().getNumber())
+                    ||(t.getNodePawn1().getNumber()==neighbour.getNodePawn2().getNumber()
+                    &&t.getNodePawn2().getNumber()==neighbour.getNodePawn1().getNumber())){
                 return true;
             }
         }
