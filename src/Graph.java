@@ -1,12 +1,20 @@
+import java.util.HashMap;
 import java.util.HashSet;
 
 /**
  * Created by Lawik Ayoub on 20-Dec-16.
  */
 public class Graph {
-    private HashSet<Node> nodes = new HashSet<>();
+    private HashMap<String,Node> nodes = new HashMap();
     private HashSet<Edge> edges = new HashSet<>();
 
+    public Graph() {
+        initGraph();
+    }
+
+    /**
+     * Method which adds all the edges and nodes to the graph
+     */
     private void initGraph(){
         Node node1 = new Node(1,"purple");
         Node node2 = new Node(2,"black");
@@ -38,7 +46,7 @@ public class Graph {
         Edge edge4 = new Edge("purple",10,11);
         Edge edge5 = new Edge("purple",12,2);
         Edge edge6 = new Edge("purple",-1,15);
-        Edge edge7 = new Edge("purple",-12,17);
+        Edge edge7 = new Edge("purple",12,17);
 
 
         Edge edge8 = new Edge("orange",1,3);
@@ -73,7 +81,79 @@ public class Graph {
         Edge edge35 = new Edge("green",18,13);
         Edge edge36 = new Edge("green",8,13);
 
+        nodes.put("1",node1);
+        nodes.put("2",node2);
+        nodes.put("3",node3);
+        nodes.put("4",node4);
+        nodes.put("5",node5);
+        nodes.put("6",node6);
+        nodes.put("7",node7);
+        nodes.put("8",node8);
+        nodes.put("9",node9);
+        nodes.put("10",node10);
+        nodes.put("11",node11);
+        nodes.put("12",node12);
+        nodes.put("13",node13);
+        nodes.put("14",node14);
+        nodes.put("15",node15);
+        nodes.put("16",node16);
+        nodes.put("17",node17);
+        nodes.put("18",node18);
+        nodes.put("19",node19);
+        nodes.put("20",node20);
+        nodes.put("21",node21);
+        nodes.put("22",node22);
+        nodes.put("-1",node23);
+
+        edges.add(edge1);
+        edges.add(edge2);
+        edges.add(edge3);
+        edges.add(edge4);
+        edges.add(edge5);
+        edges.add(edge6);
+        edges.add(edge7);
+        edges.add(edge8);
+        edges.add(edge9);
+        edges.add(edge10);
+        edges.add(edge11);
+        edges.add(edge12);
+        edges.add(edge13);
+        edges.add(edge14);
+        edges.add(edge15);
+        edges.add(edge16);
+        edges.add(edge17);
+        edges.add(edge18);
+        edges.add(edge19);
+        edges.add(edge20);
+        edges.add(edge21);
+        edges.add(edge22);
+        edges.add(edge23);
+        edges.add(edge24);
+        edges.add(edge25);
+        edges.add(edge26);
+        edges.add(edge27);
+        edges.add(edge28);
+        edges.add(edge29);
+        edges.add(edge30);
+        edges.add(edge31);
+        edges.add(edge32);
+        edges.add(edge33);
+        edges.add(edge34);
+        edges.add(edge35);
+        edges.add(edge36);
 
     }
+
+
+    //getters
+
+    public HashMap<String, Node> getNodes() {
+        return nodes;
+    }
+
+    public HashSet<Edge> getEdges() {
+        return edges;
+    }
+
 
 }

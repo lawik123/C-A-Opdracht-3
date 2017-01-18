@@ -7,12 +7,18 @@ public class Node {
     private int number;
     private String color;
 
-
+    /**
+     *
+     * @param number the unique id of the node
+     * @param color the color of the node
+     */
     public Node(int number, String color) {
         this.number = number;
         this.color = color;
 
     }
+
+    //getters
 
     public int getNumber() {
         return number;
