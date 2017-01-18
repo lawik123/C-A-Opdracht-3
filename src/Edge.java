@@ -7,8 +7,8 @@ public class Edge {
     private int from;
 
     /**
-     *
-     * @param color color of the edege
+     *Constructor for the Edge class
+     * @param color color of the edge
      * @param to destination node of the edge
      * @param from departure node of the edge
      */

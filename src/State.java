@@ -6,13 +6,13 @@ public class State {
     Node nodePawn2;
 
     /**
-     *
-     * @param nodePion1 Position of the first player
-     * @param nodePion2 Position of the second player
+     *Constructor for the State class
+     * @param nodePawn1 Position of the first player
+     * @param nodePawn2 Position of the second player
      */
-    public State(Node nodePion1, Node nodePion2) {
-        this.nodePawn1 = nodePion1;
-        this.nodePawn2 = nodePion2;
+    public State(Node nodePawn1, Node nodePawn2) {
+        this.nodePawn1 = nodePawn1;
+        this.nodePawn2 = nodePawn2;
     }
 
     //getters

@@ -8,6 +8,9 @@ public class Graph {
     private HashMap<String,Node> nodes = new HashMap();
     private HashSet<Edge> edges = new HashSet<>();
 
+    /**
+     * Constructor fort the Graph class
+     */
     public Graph() {
         initGraph();
     }

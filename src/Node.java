@@ -8,7 +8,7 @@ public class Node {
     private String color;
 
     /**
-     *
+     *Constructor for the Node class
      * @param number the unique id of the node
      * @param color the color of the node
      */
